@@ -396,7 +396,7 @@ footer .media ul li a:hover {
   /* section 1 infos style start */
   .infos {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     flex-wrap: wrap-reverse;
   }
   .infos .img {
