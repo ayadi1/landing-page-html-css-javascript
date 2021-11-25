@@ -33,9 +33,49 @@ header nav {
   justify-content: space-between;
   padding: 35px;
 }
+header nav .menuIcon {
+  margin: 0;
+  font-size: 50px;
+  display: none;
+}
 header nav h1 {
   color: white;
   font-weight: 600;
+}
+header .mobMune {
+  display: block!important;
+  width: 100%;
+}
+header .mobMune ul {
+  background: white;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+header .mobMune ul li {
+  height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  width: 40%;
+}
+header .mobMune ul li a {
+  color: #8c8787;
+  width: 100%;
+  text-align: center;
+}
+header .mobMune ul li #contact{
+  color: black;
+  background-color: #FAD700;
+  border-radius: 30px;
+
+}
+header .mobMune ul li a:hover {
+  background-color: transparent;
 }
 header nav ul {
   display: flex;
@@ -326,7 +366,13 @@ footer .media ul li a:hover {
   }
 
   /* footer style end */
-  header nav ul {
+  header .pcMenu ul {
+    display: none;
+  }
+  header nav .menuIcon {
+    display: block;
+  }
+  header .mobMune {
     display: none;
   }
 }
@@ -359,8 +405,7 @@ footer .media ul li a:hover {
     margin-top: 100px;
     align-items: center;
   }
-  .people h4 {
-  }
+
   .people .clientInfo {
     width: 100%;
     margin-bottom: 60px;
