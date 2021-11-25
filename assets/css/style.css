@@ -87,7 +87,7 @@ header i {
 }
 .infos .info {
   width: 50%;
-  padding: 100px;
+  padding: 8%;
 }
 .infos .info h3 {
   font-family: "Fraunces", serif;
@@ -298,6 +298,21 @@ footer .media ul li a:hover {
 
 /* media screen style */
 @media only screen and (max-width: 900px) {
+  /* section 1 infos style start */
+  .infos .img1 {
+    background-image: url("../images/mobile/image-transform.jpg");
+    height: 370px;
+  }
+  .infos .img2 {
+    background-image: url("../images/mobile/image-stand-out.jpg");
+    height: 370px;
+  }
+  .infos .info {
+    width: 50%;
+    padding: 50px 40px;
+    text-align: center;
+  }
+  /* section 1 infos style  end */
   /* footer style start */
   footer {
     padding: 55px 30px;
@@ -311,6 +326,9 @@ footer .media ul li a:hover {
   }
 
   /* footer style end */
+  header nav ul {
+    display: none;
+  }
 }
 @media only screen and (max-width: 700px) {
   /* footer style start */
@@ -328,45 +346,108 @@ footer .media ul li a:hover {
   /* footer style end */
 }
 @media only screen and (max-width: 600px) {
-    /* section 4 imagesList style start */
-    .imagesList {
-      display: flex;
-      flex-direction: column;
-      height: 400px;
-    }
-    .imagesList .img {
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-    .imagesList .list1 {
-      width: 100%;
-      display: flex;
-      height: 730px;
-    }
-  
-    .imagesList .list2 {
-      width: 100%;
-      display: flex;
-      height: 730px;
-    }
-  
-    .imagesList .list1 .img1 {
-      width: 50%;
-      background-image: url("../images/mobile/image-gallery-milkbottles.jpg");
-    }
-    .imagesList .list1 .img2 {
-      width: 50%;
-      background-image: url("../images/mobile/image-gallery-orange.jpg");
-    }
-    .imagesList .list2 .img3 {
-      width: 50%;
-      background-image: url("../images/mobile/image-gallery-cone.jpg");
-    }
-    .imagesList .list2 .img4 {
-      width: 50%;
-      background-image: url("../images/mobile/image-gallery-sugar-cubes.jpg");
-    }
-    /* section 4 imagesList style end */
+  /* section 3 people style start */
+  .people {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 40px;
+  }
+  .people .peopleList {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    align-items: center;
+  }
+  .people h4 {
+  }
+  .people .clientInfo {
+    width: 100%;
+    margin-bottom: 60px;
+    border-bottom: 1px solid gray;
+  }
+  .people .clientInfo:last-child {
+    margin-bottom: 0;
+  }
+  /* section 3 people style end */
+  /* section 1 infos style start */
+  .infos {
+    flex-direction: column-reverse;
+  }
+  .infos .img {
+    width: 100%;
+  }
+  .infos .img1 {
+    background-image: url("../images/mobile/image-transform.jpg");
+    height: 481px;
+  }
+  .infos .img2 {
+    background-image: url("../images/mobile/image-stand-out.jpg");
+    height: 481px;
+  }
+  .infos .info {
+    width: 100%;
+    padding: 50px 40px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+  }
+  /* section 1 infos style  end */
+  /* section 4 imagesList style start */
+  .imagesList {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+  }
+  .imagesList .img {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .imagesList .list1 {
+    width: 100%;
+    display: flex;
+    height: 730px;
+  }
+
+  .imagesList .list2 {
+    width: 100%;
+    display: flex;
+    height: 730px;
+  }
+
+  .imagesList .list1 .img1 {
+    width: 50%;
+    background-image: url("../images/mobile/image-gallery-milkbottles.jpg");
+  }
+  .imagesList .list1 .img2 {
+    width: 50%;
+    background-image: url("../images/mobile/image-gallery-orange.jpg");
+  }
+  .imagesList .list2 .img3 {
+    width: 50%;
+    background-image: url("../images/mobile/image-gallery-cone.jpg");
+  }
+  .imagesList .list2 .img4 {
+    width: 50%;
+    background-image: url("../images/mobile/image-gallery-sugar-cubes.jpg");
+  }
+  /* section 4 imagesList style end */
+  /* section 2 bgImages style start  */
+  .bgImages {
+    display: flex;
+    flex-direction: column;
+  }
+  .bgImages .bgImage {
+    width: 100%;
+
+    height: 575px;
+  }
+  .bgImages .bgImage1 {
+    background-image: url("../images/mobile/image-graphic-design.jpg");
+  }
+  .bgImages .bgImage2 {
+    background-image: url("../images/mobile/image-photography.jpg");
+  }
+  /* section 2 bgImages style end */
   /* footer style start */
   footer {
     padding: 55px 30px;
@@ -381,7 +462,7 @@ footer .media ul li a:hover {
 
   /* footer style end */
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   /* header style */
   header {
     background-image: url("../images/mobile/image-header.jpg");
@@ -463,38 +544,46 @@ footer .media ul li a:hover {
   .imagesList {
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height: auto;
   }
   .imagesList .img {
     background-size: cover;
     background-repeat: no-repeat;
+    height: 409px;
+    border-bottom: solid 1px gray;
   }
   .imagesList .list1 {
     width: 100%;
     display: flex;
-    height: 400px;
+    height: auto;
+    flex-direction: column;
   }
 
   .imagesList .list2 {
     width: 100%;
     display: flex;
-    height: 400px;
+    height: auto;
+    flex-direction: column;
   }
 
   .imagesList .list1 .img1 {
-    width: 50%;
+    width: 100%;
+    /* height: 440px; */
     background-image: url("../images/mobile/image-gallery-milkbottles.jpg");
   }
   .imagesList .list1 .img2 {
-    width: 50%;
+    width: 100%;
+    /* height: 440px; */
     background-image: url("../images/mobile/image-gallery-orange.jpg");
   }
   .imagesList .list2 .img3 {
-    width: 50%;
+    width: 100%;
+    /* height: 440px; */
     background-image: url("../images/mobile/image-gallery-cone.jpg");
   }
   .imagesList .list2 .img4 {
-    width: 50%;
+    width: 100%;
+    /* height: 440px; */
     background-image: url("../images/mobile/image-gallery-sugar-cubes.jpg");
   }
   /* section 4 imagesList style end */
