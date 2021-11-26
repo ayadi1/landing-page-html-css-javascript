@@ -43,7 +43,7 @@ header nav h1 {
   font-weight: 600;
 }
 header .mobMune {
-  display: block!important;
+  display: none;
   width: 100%;
 }
 header .mobMune ul {
